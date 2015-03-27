@@ -15,6 +15,12 @@ void dispose_heap(Heap *hp){
 	free(hp);
 }
 
+/*
+Parent of node i(excluding the root)
+= floor[((i+1)/2) -1]
+
+sift up should rise by parents, spending log(n)
+*/
 void insert_value(Heap *hp, int value){
 	if (hp->used < hp->size){
 		hp->data[hp->used] = value;
