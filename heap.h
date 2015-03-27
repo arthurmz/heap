@@ -8,6 +8,7 @@ typedef struct{
 } Heap;
 
 Heap *new_heap(int size);
+void dispose_heap(Heap *hp);
 void insert_value(Heap* hp, int value);
 
 #endif

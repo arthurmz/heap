@@ -10,6 +10,11 @@ Heap *new_heap(int size){
 	return hp;
 }
 
+void dispose_heap(Heap *hp){
+	free(hp->data);
+	free(hp);
+}
+
 void insert_value(Heap *hp, int value){
 	if (hp->used < hp->size){
 		hp->data[hp->used] = value;
