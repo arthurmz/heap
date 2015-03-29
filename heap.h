@@ -3,8 +3,8 @@
 
 typedef struct{
 	int* data;
-	int size;
-	int used;
+	int length;
+	int heap_size;
 } Heap;
 
 Heap *new_heap(int size);

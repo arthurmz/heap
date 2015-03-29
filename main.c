@@ -6,18 +6,11 @@ int main(){
 	Heap *hp = new_heap(12);
 	
 	
-	insert_value(hp,15);
-	insert_value(hp,16);
-	insert_value(hp,17);
-	insert_value(hp,18);
-	insert_value(hp,19);
-	insert_value(hp,20);
-	insert_value(hp,17);
-	insert_value(hp,17);
-	insert_value(hp,17);
-	insert_value(hp,17);
-	insert_value(hp,17);
-	insert_value(hp,454);
+	insert_value(hp,10);
+	insert_value(hp,9);
+	insert_value(hp,8);
+	insert_value(hp,7);
+	insert_value(hp,6);
 	
 	for (int i = 0; i < 12; i++){
 		printf("%d, ",hp->data[i]);
